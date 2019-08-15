@@ -1,12 +1,22 @@
 <div class="item">
-    <img src="https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg" alt="apple">
-    <div>
+    <div class="image">
+        <img src="{{image}}" alt="apple" class="image">
+        {{price}}
+    </div>
+
+    <div class="interaction-container">
         <div class="button add">
-            <p>add</p>
+            <p>Add</p>
         </div>
-        <h3>Apple</h3>
+
+        <h3>{{name}}</h3>
+
         <div class="button remove">
-            <p>remove</p>
+            <p>Remove</p>
         </div>
+    </div>
+
+    <div class="description">
+        {{description}}
     </div>
 </div>

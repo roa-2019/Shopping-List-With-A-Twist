@@ -5,5 +5,5 @@ const data = require('./data.json')
 module.exports = router
 
 router.get('/', (req, res) => {
-    res.render('index',)
+    res.render('index',data)
 })
