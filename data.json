@@ -1,54 +1,68 @@
-
 {
     "Groceries": [
-      {
-        "id": 1,
-        "name": "Fido",
-        "owner": "Fred",
-        "image": "/images/puppy1.jpg",
-        "breed": "Labrador"
-      },
-      {
-        "id": 2,
-        "name": "Coco",
-        "owner": "Chloe",
-        "image": "/images/puppy2.jpg",
-        "breed": "Labrador"
-      },
-      {
-        "id": 3,
-        "name": "Magnum",
-        "owner": "Michael",
-        "image": "/images/puppy3.jpg",
-        "breed": "Rottweiler"
-      },
-      {
-        "id": 4,
-        "name": "Sadie",
-        "owner": "Sam",
-        "image": "/images/puppy4.jpg",
-        "breed": "Labrador"
-      },
-      {
-        "id": 5,
-        "name": "Murphy",
-        "owner": "Matthew",
-        "image": "/images/puppy5.png",
-        "breed": "Pug"
-      },
-      {
-        "id": 6,
-        "name": "Bella",
-        "owner": "Brianna",
-        "image": "/images/puppy6.jpg",
-        "breed": "Labrador"
-      },
-      {
-        "id": 7,
-        "name": "Rocky",
-        "owner": "Ricky",
-        "image": "/images/puppy7.jpg",
-        "breed": "Labrador"
-      }
+        {
+            "id": 1,
+            "name": "Banana Blossom",
+            "description": "Flower of the banana tree. *Great deep fried*",
+            "image": "/images/banana-blossom.jpg",
+            "price": 2000
+        },
+        {
+            "id": 2,
+            "name": "Buddha's Hand",
+            "description": "An unusually shaped citron variety whose fruit is segmented into finger-like sections, resembling those seen on representations of Buddha. *Only 4 have ever been produced!* ",
+            "image": "/images/buddhas-hand-1.jpg",
+            "price": 5000
+        },
+        {
+            "id": 3,
+            "name": "Bacon Mints",
+            "description": "With bacon-flavored breath mints, you can taste bacon anytime.",
+            "image": "/images/bacon-mints.jpg",
+            "price": 2000
+        },
+        {
+            "id": 4,
+            "name": "Canned Cheeseburger",
+            "description": "With a shelf life of twelve months, this lightweight snack is the ideal fast food treat for the wilderness.",
+            "image": "/images/canned-cheeseburger.jpg",
+            "price": 400
+        },
+        {
+            "id": 5,
+            "name": "Unicorn Meat",
+            "description": "For those looking to increase their magical abilities!",
+            "image": "/images/unicorn-meat.jpg",
+            "price": 1000000
+        },
+        {
+            "id": 6,
+            "name": "Precooked Scrambled Eggs",
+            "description": "Just add hot water for a delicious quick breakfast!",
+            "image": "/images/banana-blossom.jpg",
+            "price": 75
+        },
+        {
+            "id": 7,
+            "name": "Emu Jerky",
+            "description": "High in protein with a great flavour",
+            "image": "/images/emu-jerky.jpg",
+            "price": 150
+        },
+        {
+            "id": 8,
+            "name": "Pizza Beer",
+            "description": "For those who love both",
+            "image": "/images/pizza-beer.jpg",
+            "price": 25
+        },
+        {
+            "id": 9,
+            "name": "Fish Roe Spread",
+            "description": "The poor man's caviar. This popular spread is made from fish roe combined with pureed vegetables, and various herbs and spices",
+            "image": "/images/emu-jerky.jpg",
+            "price": 85
+        }
+
     ]
-  }
+}
