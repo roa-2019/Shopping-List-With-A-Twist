@@ -7,7 +7,7 @@ module.exports = router
 
 // ROUTE TO MAIN PAGE DISPLAYING ALL ITEMS
 router.get('/', (req, res) => {
-    res.render('groceryItems/store', data)
+    res.render('index', data)
 })
 
 // ROUTE TO CHECKOUT PAGE

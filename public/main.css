@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+}
+
+/* Nav */
+nav {
+    height: 4rem;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(-135deg);
+    cursor: pointer;
+}
+
+.cart {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 1rem;
+    text-align: center
+}
