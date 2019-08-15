@@ -1,0 +1,27 @@
+.item{
+    width: 30%;
+    margin:1.66%;
+    background-color: lightgray;
+    padding: 10px;
+    float: left;
+    align-items:center;
+}
+
+.food-image{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* .interaction-container{
+} */
+
+.image{
+    position:relative;
+}
+#price{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
