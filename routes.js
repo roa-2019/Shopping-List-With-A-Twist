@@ -7,5 +7,5 @@ module.exports = router
 
 
 router.get('/', (req, res) => {
-    res.render('groceryItems/store')
+    res.render('groceryItems/store',)
 })
