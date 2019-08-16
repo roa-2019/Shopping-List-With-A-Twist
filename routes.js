@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 
 // ROUTE TO CHECKOUT PAGE
 router.get('/checkout', (req, res) => {
-    res.render('checkout/checkoutPage', checkoutItems)
+    res.render('checkoutPage', data)
 })
 
 // ROUTE TO EACH INDIVIDUAL ITEM PAGE. 
