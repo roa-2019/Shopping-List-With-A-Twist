@@ -2,21 +2,28 @@
 
 <p id="cart-title">CHECKOUT</p>
 
+
+<div id="headers">
+    <p>ITEM</p>
+    <p>PRICE</p>
+    <p>QUANTITY</p>
+</div>
 <div id="list">
-    {{#each groceries}}
+    {{#each basket}}
     {{! need name price ect}}
     <div class="grocery-item">
-        <div id="items">
-            <p><img src="{{image}}" class="cart-images"> {{name}}</p>
+
+        <div class="grocery-items">
+            <p><img src="{{image}}" class="cart-images">{{name}}</p>
             
         </div>
 
-        <div class="grocery-item">
+        <div class="grocery-items">
             <p>{{price}}</p>
         </div>
 
-        <div class="grocery-item">
-            <p>{{quantity}}</p>
+        <div class="grocery-items">
+            <p>{{quantity}} units</p>
         </div>
     </div>
     {{/each}}
@@ -25,4 +32,4 @@
     </p>
 </div>
 
-<button>PURCHASE</button>
+<button id="button">PURCHASE</button>
