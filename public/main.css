@@ -27,6 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
+    border-bottom: 1px solid lightgray;
 }
 
 .arrow {
