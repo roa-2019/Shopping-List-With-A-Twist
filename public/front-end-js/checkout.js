@@ -18,6 +18,3 @@ totalCost.innerHTML = totalPrice
 
 let totalQuantity = document.querySelector('#total-quantity')
 totalQuantity.innerHTML = totalQuantities
-
-console.log(totalQuantities)
-console.log(totalPrice)
