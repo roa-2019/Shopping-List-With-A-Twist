@@ -1,12 +1,26 @@
+{{#each groceries}}
+
 <div class="item">
-    <img src="https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg" alt="apple">
-    <div>
-        <div class="button add">
-            <p>add</p>
-        </div>
-        <h3>Apple</h3>
-        <div class="button remove">
-            <p>remove</p>
+    <div class="image">
+        <img class="food-image" src="{{image}}" alt="apple" class="image" onclick="location.href='/description/{{id}}'"  style="cursor: pointer;">
+        <div id="price">
+            ${{price}}
         </div>
     </div>
+
+    <h3>{{name}}</h3>
+
+    <div class="interaction-container">
+        <div id="interact" >
+            <div class="button-remove" onclick="location.href='/description/{{id}}'"  style="cursor: pointer;">
+                <p>Remove</p>
+            </div>
+            <div class="button-add" onclick="location.href='/description/{{id}}'"  style="cursor: pointer;">
+                <p>Add</p>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+{{/each}}
