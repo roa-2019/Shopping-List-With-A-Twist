@@ -1,23 +1,28 @@
 {{>nav}}
 
-<p id="cart-title">CART</p>
+<p id="cart-title">CHECKOUT</p>
 
 <div id="list">
-{{#each basket}}
-{{! need name price ect}}
+    {{#each groceries}}
+    {{! need name price ect}}
+    <div class="grocery-item">
+        <div id="items">
+            <p><img src="{{image}}" class="cart-images"> {{name}}</p>
+            
+        </div>
 
-<div id="items">
-    <p class="cart-header">ITEM</p>
-</div>
+        <div class="grocery-item">
+            <p>{{price}}</p>
+        </div>
 
-<div id="price">
-    <p class="cart-header">PRICE</p>
-</div>
-
-<div id="quantity">
-    <p class="cart-header">QUANTITY</p>
-</div>
-{{/each}}
+        <div class="grocery-item">
+            <p>{{quantity}}</p>
+        </div>
+    </div>
+    {{/each}}
+    <p id="total-cost">
+        
+    </p>
 </div>
 
 <button>PURCHASE</button>
