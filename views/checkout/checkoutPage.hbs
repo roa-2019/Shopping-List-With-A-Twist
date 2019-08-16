@@ -1,0 +1,23 @@
+{{>nav}}
+
+<p id="cart-title">CART</p>
+
+<div id="list">
+{{#each basket}}
+{{! need name price ect}}
+
+<div id="items">
+    <p class="cart-header">ITEM</p>
+</div>
+
+<div id="price">
+    <p class="cart-header">PRICE</p>
+</div>
+
+<div id="quantity">
+    <p class="cart-header">QUANTITY</p>
+</div>
+{{/each}}
+</div>
+
+<button>PURCHASE</button>
