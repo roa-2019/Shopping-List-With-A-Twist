@@ -2,28 +2,26 @@
 
 <p id="cart-title">CHECKOUT</p>
 
+
+<div id="headers">
+    <p>ITEM</p>
+    <p>PRICE</p>
+    <p>QUANTITY</p>
+</div>
+
 <div id="list">
     {{#each basket}}
-    {{! need name price ect}}
     <div class="grocery-item">
         <div id="items">
-            <p><img src="{{image}}" class="cart-images"> {{name}}</p>
-
-        </div>
-
-        <div id="items">
-            <p class="cart-header">ITEM</p>
+            <img src="{{image}}" class="cart-images"> 
+            <p>{{name}}</p>
         </div>
 
         <div class="grocery-item">
-            <p class="cart-header">PRICE</p>
-
             <p class="price"> {{price}}</p>
-
         </div>
 
         <div class="grocery-item">
-            <p class="cart-header">QUANTITY</p>
             <p class="quantity"> {{quantity}}</p>
         </div>
         {{/each}}
@@ -32,4 +30,4 @@
     <p id="total-quantity"></p>
 </div>
 
-<button>PURCHASE</button>
+<button id="button">PURCHASE</button>

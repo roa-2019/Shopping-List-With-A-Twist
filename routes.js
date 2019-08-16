@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
 // ROUTE TO CHECKOUT PAGE
 router.get('/checkout', (req, res) => {
     let basket = data.groceries.filter(groceries => groceries.quantity > 0);
-    console.log(basket)
 
     const data2 = {
         'basket': basket

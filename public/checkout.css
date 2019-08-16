@@ -1,9 +1,7 @@
 #list{
     width: 80%;
     margin: 0 auto;
-    /* border: 1px solid lightgray; */
     padding: 10px;
-    /* float: left; */
 }
 
 #cart-title{
@@ -11,6 +9,7 @@
     font-size: 30px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 5%;
 }
 
 .cart-images{
@@ -18,46 +17,29 @@
     border-radius: 10px;
 }
 
-/* #list{
-    border: 1px solid black;
-} */
-
 .grocery-item {
     display: flex;
     justify-content: space-around;
+}
+
+#headers{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 20px
 }
 
 .grocery-item div {
     width: 30%;
 }
 
-#items{
-    border: 1px solid black;
-    padding: 10px;
-    margin:10px;
-}
-
-#cart-price{
-    border: 1px solid black;
-    padding: 10px;
-    margin:10px;
-}
-
-#quantity{
-    border: 1px solid black;
-    padding: 10px;
-    margin:10px;
-
-}
-/* #cart-price{
+.grocery-items{
     border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
 }
 
-#quantity{
-    border-bottom: 1px solid black;
+#button{
+    width: 5%;
+    margin-left: 47%;
 }
-
-.cart-header{
-    border-bottom: 1px solid black;
-    font-weight: 23px;
-} */
