@@ -5,63 +5,72 @@
             "name": "Banana Blossom",
             "description": "Flower of the banana tree. *Great deep fried*",
             "image": "/images/banana-blossom.jpg",
-            "price": 2000
+            "price": 2000,
+            "quantity": 0
         },
         {
             "id": 2,
             "name": "Buddha's Hand",
             "description": "An unusually shaped citron variety whose fruit is segmented into finger-like sections, resembling those seen on representations of Buddha. *Only 4 have ever been produced!* ",
             "image": "/images/buddhas-hand-1.jpg",
-            "price": 5000
+            "price": 5000,
+            "quantity": 0
         },
         {
             "id": 3,
             "name": "Bacon Mints",
             "description": "With bacon-flavored breath mints, you can taste bacon anytime.",
             "image": "/images/bacon-mints.jpg",
-            "price": 2000
+            "price": 2000,
+            "quantity": 0
         },
         {
             "id": 4,
             "name": "Canned Cheeseburger",
             "description": "With a shelf life of twelve months, this lightweight snack is the ideal fast food treat for the wilderness.",
             "image": "/images/canned-cheeseburger.jpg",
-            "price": 400
+            "price": 400,
+            "quantity": 0
         },
         {
             "id": 5,
             "name": "Unicorn Meat",
             "description": "For those looking to increase their magical abilities!",
             "image": "/images/unicorn-meat.jpg",
-            "price": 1000000
+            "price": 1000000,
+            "quantity": 0
         },
         {
             "id": 6,
             "name": "Precooked Scrambled Eggs",
             "description": "Just add hot water for a delicious quick breakfast!",
             "image": "/images/banana-blossom.jpg",
-            "price": 75
+            "price": 75,
+            "quantity": 0
         },
         {
             "id": 7,
             "name": "Emu Jerky",
             "description": "High in protein with a great flavour",
             "image": "/images/emu-jerky.jpg",
-            "price": 150
+            "price": 150,
+            "quantity": 0
         },
         {
             "id": 8,
             "name": "Pizza Beer",
             "description": "For those who love both",
             "image": "/images/pizza-beer.jpg",
-            "price": 25
+            "price": 25,
+            "quantity": 0
         },
         {
             "id": 9,
             "name": "Fish Roe Spread",
             "description": "The poor man's caviar. This popular spread is made from fish roe combined with pureed vegetables, and various herbs and spices",
             "image": "/images/emu-jerky.jpg",
-            "price": 85
+            "price": 85,
+            "quantity": 0
         }
 
     ]
