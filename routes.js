@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router() 
 const data = require('./data.json')   
+const fs = require('fs')
 
 module.exports = router
 
@@ -24,7 +25,19 @@ router.get('/description/:id', (req, res) => {
     res.render('itemDetail', groceryItem)
 })
 
+// ROUTE FOR ADDING/REMOVING ITEMS TO CART
+router.post('/description/:id', (req, res) => {
+    
+    console.log(req.body.name)
+    req.body.add
+    req.body.remove
 
+    // fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
+        // if add, increase quantity by 1
+        // if remove, decrease quantity by 1
+    // })
+    res.render('')
+})
 
 
 

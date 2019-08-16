@@ -44,7 +44,7 @@
             "id": 6,
             "name": "Precooked Scrambled Eggs",
             "description": "Just add hot water for a delicious quick breakfast!",
-            "image": "/images/banana-blossom.jpg",
+            "image": "/images/scrambled-eggs.jpg",
             "price": 75,
             "quantity": 0
         },
@@ -68,7 +68,7 @@
             "id": 9,
             "name": "Fish Roe Spread",
             "description": "The poor man's caviar. This popular spread is made from fish roe combined with pureed vegetables, and various herbs and spices",
-            "image": "/images/emu-jerky.jpg",
+            "image": "/images/fish-roe-spread.jpg",
             "price": 85,
             "quantity": 0
         }
