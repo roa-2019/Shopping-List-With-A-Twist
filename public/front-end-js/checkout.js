@@ -1,28 +1,17 @@
-// REMOVE ITEMS FROM CART
-var removeCartItemButtons = document.getElementsByClassName('remove')
+let quantities = document.querySelectorAll('.quantity')
+let prices = document.querySelectorAll('.price')
 
-for (var i = 0; i < removeCartItemButtons.length; i++) {
-    var button = removeCartItemButtons[i]
-    button.addEventListener('click', function(event) {
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCartTotal()
-    })
-}
+let totalPrice = 0
+let totalQuantities = 0 
 
-// UPDATE CART TOTAL - need class names
-function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName('cart-items')[0]     
-    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-
-    for (var i = 0; i < cartRows.length; i++) {
-        var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        
-        
-    }
-
-}
+quantities.forEach(element => {
+   totalQuantities += parseInt(element.innerHTML)
+});
 
 
+prices.forEach(element => {
+   totalPrice += parseInt(element.innerHTML)
+});
 
+console.log(totalQuantities)
+console.log(totalPrice)

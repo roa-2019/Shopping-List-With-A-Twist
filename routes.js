@@ -13,12 +13,14 @@ router.get('/', (req, res) => {
 
 // ROUTE TO CHECKOUT PAGE
 router.get('/checkout', (req, res) => {
-    const addQuantities = data.groceries.filter(groceries => groceries.quantity > 0);
-    
+    let basket = data.groceries.filter(groceries => groceries.quantity > 0);
+    console.log(basket)
 
-    console.log(addQuantities)
+    const data2 = {
+        'basket': basket
+    }
 
-    res.render('checkout/checkoutPage', addQuantities)
+    res.render('checkoutPage', data2)
 })
 
 // ROUTE TO EACH INDIVIDUAL ITEM PAGE. 
