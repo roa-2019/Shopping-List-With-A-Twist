@@ -2,7 +2,7 @@
 
 <div class="item">
     <div class="image">
-        <img class="food-image" src="{{image}}" alt="apple" class="image" onclick="location.href='/description/:{{id}}'"  style="cursor: pointer;">
+        <img class="food-image" src="{{image}}" alt="apple" class="image" onclick="location.href='/description/{{id}}'"  style="cursor: pointer;">
         <div id="price">
             ${{price}}
         </div>
@@ -12,10 +12,10 @@
 
     <div class="interaction-container">
         <div id="interact" >
-            <div class="button-remove" onclick="location.href='/description/:{{id}}'"  style="cursor: pointer;">
+            <div class="button-remove" onclick="location.href='/description/{{id}}'"  style="cursor: pointer;">
                 <p>Remove</p>
             </div>
-            <div class="button-add" onclick="location.href='/description/:{{id}}'"  style="cursor: pointer;">
+            <div class="button-add" onclick="location.href='/description/{{id}}'"  style="cursor: pointer;">
                 <p>Add</p>
             </div>
         </div>
