@@ -26,17 +26,36 @@ router.get('/description/:id', (req, res) => {
 })
 
 // ROUTE FOR ADDING/REMOVING ITEMS TO CART
-router.post('/description/:id', (req, res) => {
-    
-    console.log(req.body.name)
-    req.body.add
-    req.body.remove
+router.post('/add/:id', (req, res) => {
+    let addItem = data.groceries.find(function(item) {
+        return item.id == req.params.id
+    })
+    addItem.quantity += 1
 
-    // fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
-        // if add, increase quantity by 1
-        // if remove, decrease quantity by 1
-    // })
-    res.render('')
+    fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
+       if (err) {
+           console.log('error adding item')
+       } else {
+           res.redirect('/description/' + req.params.id)
+       }
+    })
+    
+})
+
+router.post('/remove/:id', (req, res) => {
+    let removeItem = data.groceries.find(function(item) {
+        return item.id == req.params.id
+    })
+    removeItem.quantity -= 1
+
+    fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
+       if (err) {
+           console.log('error adding item')
+       } else {
+           res.redirect('/description/' + req.params.id)
+       }
+    })
+    
 })
 
 
