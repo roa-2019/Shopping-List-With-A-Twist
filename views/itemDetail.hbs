@@ -10,20 +10,20 @@
     <p>{{description}}</p>
 
     <div class="buttons-container">
-        <form class="form" action="/description/{{id}}" method="post">
-            <input type="submit" name="" value="add">
+        <form class="form" action="/add/{{id}}" method="post">
+            <input type="submit" name="" value="Add"  class="button add green">
         </form>
 
-        <form class="form" action="/description/{{id}}" method="post">
-            <input type="submit" name="" value="remove">
+        <form class="form" action="/remove/{{id}}" method="post">
+            <input type="submit" name="" value="Remove" class="button remove red">
         </form>
-
+{{!-- 
         <div class="button add green">
             <p>Add</p>
         </div>
 
         <div class="button remove red">
             <p>Remove</p>
-        </div>
+        </div> --}}
     </div>
 </div>

@@ -13,7 +13,14 @@ router.get('/', (req, res) => {
 
 // ROUTE TO CHECKOUT PAGE
 router.get('/checkout', (req, res) => {
-    res.render('checkout/checkoutPage', checkoutItems)
+    let basket = data.groceries.filter(groceries => groceries.quantity > 0);
+    console.log(basket)
+
+    const data2 = {
+        'basket': basket
+    }
+
+    res.render('checkoutPage', data2)
 })
 
 // ROUTE TO EACH INDIVIDUAL ITEM PAGE. 
@@ -26,17 +33,36 @@ router.get('/description/:id', (req, res) => {
 })
 
 // ROUTE FOR ADDING/REMOVING ITEMS TO CART
-router.post('/description/:id', (req, res) => {
-    
-    console.log(req.body.name)
-    req.body.add
-    req.body.remove
+router.post('/add/:id', (req, res) => {
+    let addItem = data.groceries.find(function(item) {
+        return item.id == req.params.id
+    })
+    addItem.quantity += 1
 
-    // fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
-        // if add, increase quantity by 1
-        // if remove, decrease quantity by 1
-    // })
-    res.render('')
+    fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
+       if (err) {
+           console.log('error adding item')
+       } else {
+           res.redirect('/description/' + req.params.id)
+       }
+    })
+    
+})
+
+router.post('/remove/:id', (req, res) => {
+    let removeItem = data.groceries.find(function(item) {
+        return item.id == req.params.id
+    })
+    removeItem.quantity -= 1
+
+    fs.writeFile('./data.json', JSON.stringify(data), (err, data) => {
+       if (err) {
+           console.log('error adding item')
+       } else {
+           res.redirect('/description/' + req.params.id)
+       }
+    })
+    
 })
 
 
