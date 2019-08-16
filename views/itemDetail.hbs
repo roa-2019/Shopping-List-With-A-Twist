@@ -1,7 +1,7 @@
 {{>nav}}
 <div class="itemDetail-container">
     <div class="img-container">
-        <img src="{{image}}" alt="">
+        <img src="{{image}}" alt="{{name}}" class="itemDetail-image">
         <div class="price-container">
             <p class="price-text">$ {{price}}</p>
         </div>
@@ -9,14 +9,13 @@
     <h2>{{name}}</h2>
     <p>{{description}}</p>
 
-
     <div class="buttons-container">
         <form class="form" action="/description/{{id}}" method="post">
-            <input type="submit" name="add" value="add">
+            <input type="submit" name="" value="add">
         </form>
 
         <form class="form" action="/description/{{id}}" method="post">
-            <input type="submit" name="remove" value="remove">
+            <input type="submit" name="" value="remove">
         </form>
 
         <div class="button add green">
