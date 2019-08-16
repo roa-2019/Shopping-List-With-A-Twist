@@ -1,27 +1,86 @@
 .item{
     width: 30%;
-    margin:1.66%;
-    background-color: lightgray;
+    margin:.90%;
+    border: 1px solid lightgray;
     padding: 10px;
-    float: left;
+    /* float: left; */
     align-items:center;
+    vertical-align: middle;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.item-container:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.item:nth-child(3n+4){
+    clear:left;
 }
 
 .food-image{
     width: 100%;
+    max-height: 500px;
+    height:auto;
     text-align: center;
     display: block;
     margin: 0 auto;
 }
 
-/* .interaction-container{
-} */
-
 .image{
     position:relative;
 }
+
 #price{
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 4%;
+    left: 4%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.8);  
+    color: white;
+    
+}
+
+#interact{
+    width: 100%;
+    float: left;
+    overflow: hidden; 
+    margin-top: 0px;
+    
+}
+
+.button-add{
+    width: 43%;
+    background-color: green;
+    border-right: 30px solid green;
+    border-left: 30% solid green;
+    border-top: 5% solid green;
+    border-bottom: 5% solid green;
+    text-align: center;
+    float:left; 
+}
+
+.button-remove{
+    width: 50%;
+    background-color: red;
+    border-right: 30% solid red;
+    border-left: 30% solid red;
+    border-top: 5% solid red;
+    border-bottom: 5% solid red;
+    text-align: center;
+    float:left; 
+}
+
+h3{
+    padding-left: 1%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.item-container{
+    max-width: 1700px;
+    margin: 0 auto;
 }
