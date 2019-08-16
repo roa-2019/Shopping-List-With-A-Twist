@@ -7,6 +7,10 @@ img {
     height: 100%;
 }
 
+small {
+    display: block;
+}
+
 /* Nav */
 nav {
     height: 4rem;
@@ -33,6 +37,35 @@ nav {
 
 /* Footer */
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     padding: 2rem 1rem;
-    text-align: center
+    width: 100%;
+    text-align: center;
+}
+
+.item{
+    width: 30%;
+    margin:1.66%;
+    background-color: lightgray;
+    padding: 10px;
+    float: left;
+    align-items:center;
+}
+
+.food-image{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.image{
+    position:relative;
+}
+#price{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }

@@ -1,7 +1,11 @@
+{{#each groceries}}
+
 <div class="item">
     <div class="image">
-        <img src="{{image}}" alt="apple" class="image">
-        {{price}}
+        <img class="food-image" src="{{image}}" alt="apple" class="image">
+        <div id="price">
+            ${{price}}
+        </div>
     </div>
 
     <div class="interaction-container">
@@ -20,3 +24,5 @@
         {{description}}
     </div>
 </div>
+
+{{/each}}

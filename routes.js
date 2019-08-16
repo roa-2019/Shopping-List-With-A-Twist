@@ -21,7 +21,7 @@ router.get('/description/:id', (req, res) => {
     const id = req.params.id
     const groceryItem = data.groceries.find(groceries => groceries.id == req.params.id) 
     
-    res.render('items/itemDescription', groceryItem)
+    res.render('itemDetail', groceryItem)
 })
 
 
