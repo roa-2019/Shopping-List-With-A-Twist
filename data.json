@@ -10,20 +10,21 @@
         },
         {
             "id": 2,
-            "name": "Buddha's Hand",
-            "description": "An unusually shaped citron variety whose fruit is segmented into finger-like sections, resembling those seen on representations of Buddha. *Only 4 have ever been produced!* ",
-            "image": "/images/buddhas-hand-1.jpg",
-            "price": 5000,
-            "quantity": 0
-        },
-        {
-            "id": 3,
             "name": "Bacon Mints",
             "description": "With bacon-flavored breath mints, you can taste bacon anytime.",
             "image": "/images/bacon-mints.jpg",
             "price": 2000,
             "quantity": 0
         },
+        {
+            "id": 3,
+            "name": "Buddha's Hand",
+            "description": "An unusually shaped citron variety whose fruit is segmented into finger-like sections, resembling those seen on representations of Buddha. *Only 4 have ever been produced!* ",
+            "image": "/images/buddhas-hand-1.jpg",
+            "price": 5000,
+            "quantity": 0
+        },
+
         {
             "id": 4,
             "name": "Canned Cheeseburger",
