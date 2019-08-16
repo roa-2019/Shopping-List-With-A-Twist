@@ -7,7 +7,6 @@ module.exports = router
 
 // ROUTE TO MAIN PAGE DISPLAYING ALL ITEMS
 router.get('/', (req, res) => {
-    console.log(data)
     res.render('index', data)
 })
 
